@@ -27,7 +27,7 @@ module Backend
         {
           iss: 'TraduSquare',
           iat: Time.now.to_i,
-          aud: 'www.example.com',
+          aud: 'https://tradusquare.es',
           sub: params[:email],
           GivenName: params[:first_name],
           Surname: params[:last_name],
