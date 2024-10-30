@@ -31,7 +31,7 @@ services:
       - tradusquare
     volumes:
       - ./:/usr/src/app
-    command: sh -c "rake db:migrate && hanami dev"
+    command: sh -c "rake db:migrate && hanami server"
     ports:
       - "2300:2300"
     depends_on:

@@ -2,11 +2,11 @@
 
 source 'https://rubygems.org'
 
-gem 'hanami', '~> 2.0'
-gem 'hanami-api'
-gem 'hanami-controller', '~> 2.0'
-gem 'hanami-router', '~> 2.0'
-gem 'hanami-validations', '~> 2.0'
+gem 'hanami', '~> 2.1'
+gem 'hanami-api', '~> 0.3.0'
+gem 'hanami-controller', '~> 2.1'
+gem 'hanami-router', '~> 2.1'
+gem 'hanami-validations', '~> 2.1'
 gem 'pg'
 gem 'rom', '~> 5.3'
 gem 'rom-sql', '~> 3.6'
@@ -35,10 +35,13 @@ group :development do
   gem 'bullet'
   gem 'guard-puma', '~> 0.8'
   gem 'rubocop'
+  gem 'hanami-webconsole'
+  gem "hanami-reloader"
 end
 
 group :test do
   gem 'database_cleaner-sequel'
   gem 'rack-test'
+  gem 'capybara', require: false
   gem 'simplecov', require: false
 end

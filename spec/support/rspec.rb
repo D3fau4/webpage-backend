@@ -22,4 +22,9 @@ RSpec.configure do |config|
 
   config.order = :random
   Kernel.srand config.seed
+  config.example_status_persistence_file_path = "spec/examples.txt"
+
+  # Uncomment this to enable warnings. This is recommended, but in some cases
+  # may be too noisy due to issues in dependencies.
+  config.warnings = true
 end
